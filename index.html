@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <style>
-            body {
+        body {
             display: flex;
             flex-flow: row wrap;
         }
@@ -17,7 +17,7 @@
         aside,
         footer {
             border-radius: 11px 0.5em 0.5em;
-            border: 0px solid;
+            border: 1px solid;
             padding: 10px;
             margin: 10px;
             flex: 1 100%;
@@ -35,20 +35,21 @@
         
         header {
             align-self: center;
-            flex: 3 1 100%
+            flex: 1 1 23%
         }
+        
         .title {
-                text-align: center
-            }
+            text-align: center; 
+        }
         
         aside {
-            align-self: center;
-            flex: 1 1 30%;
+            align-self;
+            flex: 1 1 70%;
         }
         
         article {
             align-self: center;
-            flex: 3 1 50%;
+            flex: 6 1 0%;
         }
         
         ul {
@@ -58,8 +59,9 @@
         
         nav {
             align-self: center;
-            flex: 1 1 20%;
+            flex: 1 1 0%;
         }
+        
         .menu a {
             margin: 10px;
             padding: 10px;
@@ -68,19 +70,26 @@
             color: black;
             display: block;
         }
-            
+       
     </style>
 </head>
 
 <body>
     <header>
-        <h1 class="title">Dani's Computerservice</h1>
+
+        <img src="index.JPG" />
     </header>
     
     <aside>
-        <img src="index.JPG" />
+        <h1>Dani's Computerservice</h1>
     </aside>
 
+<nav>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="kontakt.html">Kontakt</a>
+    </nav>
+    
     <article>
         <h2>Service</h2>
         <ul>
@@ -91,9 +100,5 @@
         </ul>
     </article>
 
-    <nav>
- <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="kontakt.html">Kontakt</a>
-    </nav>
+    
 </body>

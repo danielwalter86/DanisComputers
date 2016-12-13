@@ -33,16 +33,13 @@
             text-decoration: none;
         }
         
-        
-        
         nav {
-            align-self: center;
-            flex: 1 1 o%;
+            flex: 1 1 0%;
         }
-
+        
         header {
             align-self: center;
-            flex: 1 1 0%
+            flex: 5 1 0%
         }
         
         .title {
@@ -51,19 +48,18 @@
         
         section {
             align-self: center;
-            flex: 1 1 o%;
+            flex: 1 1 0%;
         }
         
         article {
             align-self: center;
-            flex: 3 1 0%;
+            flex: 1 1 0%;
         }
         
         aside {
             align-self: center;
             flex: 1 1 0%;
         }
-        
         
         .menu a {
             margin: 10px;
@@ -87,29 +83,32 @@
         <p>
             <form id="kontaktformular" name="kontaktformular" action="">
 
-                <section>
-                    <div>
-                        <label for="absender">Name:</label>
-                        <input type="text" id="absender" name="absender" />
-                    </div>
+                <form id="kontaktformular" name="kontaktformular" action="http://www.formular-chef.de/fc.cgi" method="post">
+
+                    <input type="hidden" name="empfaenger" value="daniel-walter86@web.de" />
+                    <section>
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" id="absender" name="absender" />
+                        </div>
+
+                        <div>
+                            <label for="vorname">Vorname:</label>
+                            <input type="text" id="absender" name="absender" />
+                        </div>
+                    </section>
+
+                    <article>
+                        <div>
+                            <label for="absender">Ihre E-Mail-Adresse:</label>
+                            <input type="text" id="absender" name="absender" />
+                        </div>
+                    </article>
 
                     <div>
-                        <label for="absender">Vorname:</label>
-                        <input type="text" id="absender" name="absender" />
+                        <label for="nachricht">Ihre Nachricht:</label>
+                        <textarea id="nachricht" name="nachricht" cols="20" rows="5"></textarea>
                     </div>
-                </section>
-
-                <article>
-                    <div>
-                        <label for="absender">Ihre E-Mail-Adresse:</label>
-                        <input type="text" id="absender" name="absender" />
-                    </div>
-                </article>
-                <div>
-                    <label for="nachricht">Ihre Nachricht:</label>
-                    <textarea id="nachricht" name="nachricht" cols="20" rows="5"></textarea>
-                </div>
-
         </p>
 
         <div>
