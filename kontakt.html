@@ -5,9 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <style>
-        .menu {
-            width: 200px;
+        body {
+            display: flex;
+            flex-flow: row wrap;
         }
+        
+        header,
+        nav,
+        article,
+        section,
+        aside,
+        footer {
+            border-radius: 11px 0.5em 0.5em;
+            border: 1px solid;
+            padding: 10px;
+            margin: 10px;
+            flex: 1 100%;
+        }
+        
+        section a {
+            display: inline-block;
+            width: 90%;
+            background: #fffbf0;
+            border: 1px solid #dfac20;
+            margin: 0;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        
+        
+        nav {
+            align-self: center;
+            flex: 1 1 o%;
+        }
+
+        header {
+            align-self: center;
+            flex: 1 1 0%
+        }
+        
+        .title {
+            text-align: center
+        }
+        
+        section {
+            align-self: center;
+            flex: 1 1 o%;
+        }
+        
+        article {
+            align-self: center;
+            flex: 3 1 0%;
+        }
+        
+        aside {
+            align-self: center;
+            flex: 1 1 0%;
+        }
+        
         
         .menu a {
             margin: 10px;
@@ -21,9 +77,44 @@
 </head>
 
 <body>
+    <nav>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <header>
+        Hier können Sie mir ganz bequem Ihr Anliegen schildern <br> und ich setzte mich baldest möglichst mit Ihnen in Verbindung
+        <p>
+            <form id="kontaktformular" name="kontaktformular" action="">
 
-    <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="kontakt.html">Kontakt</a>
+                <section>
+                    <div>
+                        <label for="absender">Name:</label>
+                        <input type="text" id="absender" name="absender" />
+                    </div>
 
+                    <div>
+                        <label for="absender">Vorname:</label>
+                        <input type="text" id="absender" name="absender" />
+                    </div>
+                </section>
+
+                <article>
+                    <div>
+                        <label for="absender">Ihre E-Mail-Adresse:</label>
+                        <input type="text" id="absender" name="absender" />
+                    </div>
+                </article>
+                <div>
+                    <label for="nachricht">Ihre Nachricht:</label>
+                    <textarea id="nachricht" name="nachricht" cols="20" rows="5"></textarea>
+                </div>
+
+        </p>
+
+        <div>
+            <input type="submit" value="Abschicken" />
+        </div>
+        </form>
+    </header>
 </body>

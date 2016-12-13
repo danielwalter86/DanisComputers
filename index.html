@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <style>
-        body {
+            body {
             display: flex;
             flex-flow: row wrap;
         }
@@ -33,30 +33,42 @@
             text-decoration: none;
         }
         
-        aside {
-            flex: 1 1 0%;
-        }
-        nav a, nav img {
-            display: inline-block;
-        }
-
-  nav {
-      align-self: center;
-      flex: 1 1 0%;
-
-  }      
-        article {
+        header {
             align-self: center;
-            flex: 3 1 0%;
+            flex: 3 1 100%
+        }
+        .title {
+                text-align: center
+            }
+        
+        aside {
+            align-self: center;
+            flex: 1 1 30%;
         }
         
-        .title {
-            text-align: center
+        article {
+            align-self: center;
+            flex: 3 1 50%;
         }
+        
         ul {
             margin: 0;
             padding: 0;
         }
+        
+        nav {
+            align-self: center;
+            flex: 1 1 20%;
+        }
+        .menu a {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: grey;
+            color: black;
+            display: block;
+        }
+            
     </style>
 </head>
 
@@ -65,13 +77,9 @@
         <h1 class="title">Dani's Computerservice</h1>
     </header>
     
-        
-    <nav>
+    <aside>
         <img src="index.JPG" />
-        <a href="index.html">Home</a>
-        <a href="kontakt.html">Kontakt</a>
-
-    </nav>
+    </aside>
 
     <article>
         <h2>Service</h2>
@@ -83,4 +91,9 @@
         </ul>
     </article>
 
+    <nav>
+ <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
 </body>
